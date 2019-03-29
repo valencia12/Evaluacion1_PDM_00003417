@@ -17,6 +17,10 @@ public class MainActivity extends AppCompatActivity {
     private TextView Producto7;
     private TextView Producto8;
     private TextView Producto9;
+    private TextView Correo_1;
+    private TextView Usuario1;
+    private TextView mostrar1;
+    private TextView mostrar12;
     private Button Enviar1;
 
     @Override
@@ -32,7 +36,13 @@ public class MainActivity extends AppCompatActivity {
         Producto7 = findViewById(R.id.tv_prod7);
         Producto8 = findViewById(R.id.tv_prod8);
         Producto9 = findViewById(R.id.tv_prod9);
+        mostrar1 = findViewById(R.id.mostrar);
+        mostrar12 = findViewById(R.id.tv_detalle);
+        Usuario1 = findViewById(R.id.usuario1);
+        Correo_1 = findViewById(R.id.correo1);
         Enviar1 = findViewById(R.id.enviar);
+
+
         Producto1.setOnClickListener(v ->{
             contar(Producto1);
         });
@@ -61,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
             contar(Producto9);
         });
 
-        /*setContentView(R.layout.activity_main);
+
 
         Enviar1.setOnClickListener(v -> {
             String produ1 = Producto1.getText().toString();
@@ -73,7 +83,14 @@ public class MainActivity extends AppCompatActivity {
             String produ7 = Producto7.getText().toString();
             String produ8 = Producto8.getText().toString();
             String produ9 = Producto9.getText().toString();
+            String correo3 = Correo_1.getText().toString();
+
+            String usu = Usuario1.getText().toString();
             Intent mIntent= new Intent(this, Main2Activity.class);
+            mIntent.putExtra(AppConstant.CORREOR_KEY, correo3);
+            mIntent.putExtra(AppConstant.USUARIO_KEY, usu);
+
+            mIntent.putExtra(AppConstant.PRODCUTO1_KEY, produ1);
             mIntent.putExtra(AppConstant.PRODCUTO1_KEY, produ1);
             mIntent.putExtra(AppConstant.PRODCUTO2_KEY, produ2);
             mIntent.putExtra(AppConstant.PRODCUTO3_KEY, produ3);
@@ -84,15 +101,17 @@ public class MainActivity extends AppCompatActivity {
             mIntent.putExtra(AppConstant.PRODCUTO8_KEY, produ8);
             mIntent.putExtra(AppConstant.PRODCUTO9_KEY, produ9);
             startActivity(mIntent);
-        });*/
+        });
 
     }
 
+
+
     public void contar(TextView textView) {
         int contadora;
-
         contadora = Integer.parseInt(textView.getText().toString());
         contadora++;
+        mostrar1.setText((Integer.parseInt(mostrar1.getText().toString())+contadora)+"");
         textView.setText(Integer.toString(contadora));
 
     }

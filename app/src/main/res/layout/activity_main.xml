@@ -15,6 +15,13 @@
         android:textColor="@color/Texto"
         android:textSize="25sp" />
 
+    <TextView
+        android:id="@+id/mostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+
     <android.widget.GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -113,10 +120,11 @@
         android:textColor="@color/Texto" />
 
     <EditText
+        android:id="@+id/usuario1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textSize="10dp"
-        android:text="Usuario" />
+        android:hint="Usuario" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -126,10 +134,11 @@
         android:textColor="@color/Texto" />
 
     <EditText
+        android:id="@+id/correo1"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:textSize="10dp"
-        android:text="Email" />
+        android:hint="Email" />
 
   <Button
         android:id="@+id/enviar"

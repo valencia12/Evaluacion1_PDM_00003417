@@ -3,17 +3,19 @@ package com.example.cortodelabo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
     TextView correor, usuarior, pro1,pro2,pro3,pro4,pro5,pro6,pro7,pro8,pro9;
-
+    Button Share1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         correor = findViewById(R.id.usuario_r);
         usuarior = findViewById(R.id.correo_r);
+        Share1 = findViewById(R.id.share);
         pro1 = findViewById(R.id.tv_prod1r);
         pro2 = findViewById(R.id.tv_prod2r);
         pro3 = findViewById(R.id.tv_prod3r);
@@ -35,6 +37,31 @@ public class Main2Activity extends AppCompatActivity {
         pro7.setText(mIntent.getStringExtra(AppConstant.PRODCUTO7_KEY));
         pro8.setText(mIntent.getStringExtra(AppConstant.PRODCUTO8_KEY));
         pro9.setText(mIntent.getStringExtra(AppConstant.PRODCUTO9_KEY));
+
+        Share1.setOnClickListener(v->{
+            String prd1 = pro1.getText().toString();
+            String prd2 = pro2.getText().toString();
+            String prd3 = pro3.getText().toString();
+            String prd4 = pro4.getText().toString();
+            String prd5 = pro5.getText().toString();
+            String prd6 = pro6.getText().toString();
+            String prd7 = pro7.getText().toString();
+            String prd8 = pro8.getText().toString();
+            String prd9 = pro9.getText().toString();
+            Intent newIntent= new Intent();newIntent.setType("text/plain");
+            newIntent.setAction(Intent.ACTION_SEND);
+            newIntent.putExtra(AppConstant.PRODCUTO1_KEY, prd1);
+            newIntent.putExtra(AppConstant.PRODCUTO2_KEY, prd2);
+            newIntent.putExtra(AppConstant.PRODCUTO3_KEY, prd3);
+            newIntent.putExtra(AppConstant.PRODCUTO4_KEY, prd4);
+            newIntent.putExtra(AppConstant.PRODCUTO6_KEY, prd6);
+            newIntent.putExtra(AppConstant.PRODCUTO7_KEY, prd7);
+            newIntent.putExtra(AppConstant.PRODCUTO8_KEY, prd8);
+            newIntent.putExtra(AppConstant.PRODCUTO9_KEY, prd9);
+            startActivity(newIntent);
+
+        });
+
 
     }
 }
