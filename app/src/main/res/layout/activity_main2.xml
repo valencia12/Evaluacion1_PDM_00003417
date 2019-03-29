@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23dp"
+        android:text="Factura"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23dp"/>
+    <TextView
+        android:id="@+id/usuario_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="u"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correo:"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23dp"/>
+    <TextView
+        android:id="@+id/correo_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="23dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detalle del producto:"
+        android:textColor="@color/colorProducto2"
+        android:textSize="23dp"/>
+    <android.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3">
+
+        <TextView
+            android:id="@+id/tv_prod1r"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod2r"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod3r"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto1"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod4r"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto2"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod5r"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto4"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod6r"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto5"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod7r"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto6"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod8r"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto7"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod9r"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+
+    </android.widget.GridLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share" />
+
+</LinearLayout>

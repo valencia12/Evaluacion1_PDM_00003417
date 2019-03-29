@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:paddingBottom="30dp"
+        android:text="Contador de productos"
+        android:textColor="@color/Texto"
+        android:textSize="25sp" />
+
+    <android.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tv_prod1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimary"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto1"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto2"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto4"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto5"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto6"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorProducto7"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tv_prod9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            android:text="1"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+
+    </android.widget.GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Usuario"
+        android:textColor="@color/Texto" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Usuario" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:text="Correo"
+        android:textColor="@color/Texto" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:text="Email" />
+
+  <Button
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar" />
+
+</LinearLayout>

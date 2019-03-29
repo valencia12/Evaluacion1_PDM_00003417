@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorProducto1">#2F8554</color>
+    <color name="colorProducto2">#2F5685</color>
+    <color name="colorProducto3">#2F8554</color>
+    <color name="colorProducto4">#816C85</color>
+    <color name="colorProducto5">#5A2F85</color>
+    <color name="colorProducto6">#C57B4C</color>
+    <color name="colorProducto7">#D60606</color>
+    <color name="colorProducto8">#80F074</color>
+    <color name="colorProducto9">#BCFF8A</color>
+    <color name="Texto">#000000</color>
+</resources>
